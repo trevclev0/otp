@@ -32,5 +32,8 @@
     "nodemailer": "^6.7.2",
     "nodemailer-express-handlebars": "^4.0.0",
     "otp-generator": "^4.0.0"
+  },
+  "peerDependencies": {
+    "node-notifier": "^10.0.1"
   }
 }
