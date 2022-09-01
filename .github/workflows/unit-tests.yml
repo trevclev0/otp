@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Node.js CI - Unit Tests
 
 on:
   push:
@@ -12,11 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js
+      - name: Checkout source code
+        uses: actions/checkout@v2
+      - name: Set up Node.js environment
         uses: actions/setup-node@v2
         with:
           node-version: '16.x'
       - name: Install dependencies
         run: yarn
-      - run: yarn test
+      - name: Run unit tests
+        run: yarn test
