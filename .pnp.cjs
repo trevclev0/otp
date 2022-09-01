@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["http-status-codes", "npm:2.2.0"],\
             ["jest", "virtual:b1a1d2bcda82066d650a7860e8c6658524381d17db18cb7d83ff4910087defde88c75ea00bfd5209160bd81d51ab4f45fb4a2682f4c5fd682c6be7474f174a0f#npm:29.0.1"],\
             ["morgan", "npm:1.10.0"],\
+            ["node-notifier", "npm:10.0.1"],\
             ["nodemailer", "npm:6.7.8"],\
             ["nodemailer-express-handlebars", "npm:5.0.0"],\
             ["otp-generator", "npm:4.0.0"]\
@@ -1143,7 +1144,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-validate", "npm:29.0.1"],\
             ["jest-watcher", "npm:29.0.1"],\
             ["micromatch", "npm:4.0.4"],\
-            ["node-notifier", null],\
+            ["node-notifier", "npm:10.0.1"],\
             ["pretty-format", "npm:29.0.1"],\
             ["slash", "npm:3.0.0"],\
             ["strip-ansi", "npm:6.0.1"]\
@@ -1250,7 +1251,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-message-util", "npm:29.0.1"],\
             ["jest-util", "npm:29.0.1"],\
             ["jest-worker", "npm:29.0.1"],\
-            ["node-notifier", null],\
+            ["node-notifier", "npm:10.0.1"],\
             ["slash", "npm:3.0.0"],\
             ["string-length", "npm:4.0.2"],\
             ["strip-ansi", "npm:6.0.1"],\
@@ -2920,6 +2921,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["growly", [\
+        ["npm:1.3.0", {\
+          "packageLocation": "./.yarn/cache/growly-npm-1.3.0-b3a02d4d2a-53cdecd4c1.zip/node_modules/growly/",\
+          "packageDependencies": [\
+            ["growly", "npm:1.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["handlebars", [\
         ["npm:4.7.7", {\
           "packageLocation": "./.yarn/cache/handlebars-npm-4.7.7-a9ccfabf80-1e79a43f5e.zip/node_modules/handlebars/",\
@@ -3183,6 +3193,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["is-docker", [\
+        ["npm:2.2.1", {\
+          "packageLocation": "./.yarn/cache/is-docker-npm-2.2.1-3f18a53aff-3fef7ddbf0.zip/node_modules/is-docker/",\
+          "packageDependencies": [\
+            ["is-docker", "npm:2.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["is-fullwidth-code-point", [\
         ["npm:3.0.0", {\
           "packageLocation": "./.yarn/cache/is-fullwidth-code-point-npm-3.0.0-1ecf4ebee5-44a30c2945.zip/node_modules/is-fullwidth-code-point/",\
@@ -3224,6 +3243,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/is-stream-npm-2.0.1-c802db55e7-b8e05ccdf9.zip/node_modules/is-stream/",\
           "packageDependencies": [\
             ["is-stream", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["is-wsl", [\
+        ["npm:2.2.0", {\
+          "packageLocation": "./.yarn/cache/is-wsl-npm-2.2.0-2ba10d6393-20849846ae.zip/node_modules/is-wsl/",\
+          "packageDependencies": [\
+            ["is-wsl", "npm:2.2.0"],\
+            ["is-docker", "npm:2.2.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3312,7 +3341,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node-notifier", null],\
             ["import-local", "npm:3.1.0"],\
             ["jest-cli", "virtual:76b2314ac3edbfc4e1c5c826227357f0c2e0c6b76fd901c4206e50f6c550296e242a10000d2311093cf6dbf1e0c838b2728a4156419b17698488ef30cf412a06#npm:29.0.1"],\
-            ["node-notifier", null]\
+            ["node-notifier", "npm:10.0.1"]\
           ],\
           "packagePeers": [\
             "@types/node-notifier",\
@@ -3383,7 +3412,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-config", "virtual:3e88bb1101d96dda829c66cc22e1505180fb25850f4f84809b87d40ad447cf8b03ee33388904878731afef8fbe037dbd7a341566c86edc3f101ff3458a20539b#npm:29.0.1"],\
             ["jest-util", "npm:29.0.1"],\
             ["jest-validate", "npm:29.0.1"],\
-            ["node-notifier", null],\
+            ["node-notifier", "npm:10.0.1"],\
             ["prompts", "npm:2.4.2"],\
             ["yargs", "npm:17.5.1"]\
           ],\
@@ -4265,6 +4294,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["node-notifier", [\
+        ["npm:10.0.1", {\
+          "packageLocation": "./.yarn/unplugged/node-notifier-npm-10.0.1-7a3f9a97c4/node_modules/node-notifier/",\
+          "packageDependencies": [\
+            ["node-notifier", "npm:10.0.1"],\
+            ["growly", "npm:1.3.0"],\
+            ["is-wsl", "npm:2.2.0"],\
+            ["semver", "npm:7.3.7"],\
+            ["shellwords", "npm:0.1.1"],\
+            ["uuid", "npm:8.3.2"],\
+            ["which", "npm:2.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["node-releases", [\
         ["npm:2.0.2", {\
           "packageLocation": "./.yarn/cache/node-releases-npm-2.0.2-a4dc82058a-da858bf86b.zip/node_modules/node-releases/",\
@@ -4419,6 +4463,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["http-status-codes", "npm:2.2.0"],\
             ["jest", "virtual:b1a1d2bcda82066d650a7860e8c6658524381d17db18cb7d83ff4910087defde88c75ea00bfd5209160bd81d51ab4f45fb4a2682f4c5fd682c6be7474f174a0f#npm:29.0.1"],\
             ["morgan", "npm:1.10.0"],\
+            ["node-notifier", "npm:10.0.1"],\
             ["nodemailer", "npm:6.7.8"],\
             ["nodemailer-express-handlebars", "npm:5.0.0"],\
             ["otp-generator", "npm:4.0.0"]\
@@ -4888,6 +4933,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["shellwords", [\
+        ["npm:0.1.1", {\
+          "packageLocation": "./.yarn/cache/shellwords-npm-0.1.1-a091a78197-8d73a5e986.zip/node_modules/shellwords/",\
+          "packageDependencies": [\
+            ["shellwords", "npm:0.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["side-channel", [\
         ["npm:1.0.4", {\
           "packageLocation": "./.yarn/cache/side-channel-npm-1.0.4-e1f38b9e06-351e41b947.zip/node_modules/side-channel/",\
@@ -5320,6 +5374,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/utils-merge-npm-1.0.1-363bbdfbca-c810954932.zip/node_modules/utils-merge/",\
           "packageDependencies": [\
             ["utils-merge", "npm:1.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["uuid", [\
+        ["npm:8.3.2", {\
+          "packageLocation": "./.yarn/cache/uuid-npm-8.3.2-eca0baba53-5575a8a75c.zip/node_modules/uuid/",\
+          "packageDependencies": [\
+            ["uuid", "npm:8.3.2"]\
           ],\
           "linkType": "HARD"\
         }]\
