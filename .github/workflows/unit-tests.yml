@@ -1,4 +1,4 @@
-name: Node.js CI - Unit Tests
+name: Run Unit Tests
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: Unit Tests - Node.js ${{ matrix.node-version }}
 
     strategy:
       matrix:
